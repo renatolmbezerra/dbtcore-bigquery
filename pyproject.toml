@@ -1,0 +1,24 @@
+[project]
+name = "dbtcore-bigquery"
+version = "0.1.0"
+description = "repositorio do projeto dbt com bigquery"
+authors = [
+    {name = "Renato-Tecpel",email = "renatolmb@hotmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dbt-core (>=1.10.13,<2.0.0)",
+    "dbt-bigquery (>=1.10.2,<2.0.0)",
+    "pre-commit (>=4.3.0,<5.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.3.0"
+sqlfluff = "^3.4.2"
+
