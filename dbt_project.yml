@@ -32,6 +32,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 seeds:
   +schema: raw
 models:
-  staging:
-    +schema: staging # Define o schema padrão para os modelos de staging
-    +materialized: view
+  datawarehouse:
+    staging:
+      +schema: staging # Define o schema padrão para os modelos de staging
+      +materialized: view
