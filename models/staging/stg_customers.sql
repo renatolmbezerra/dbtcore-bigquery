@@ -1,21 +1,21 @@
-WITH
+with
 
-SOURCE AS (
+source as (
 
-    SELECT * FROM {{ source('ecom', 'raw_customers') }}
+    select * from {{ source('ecom', 'raw_customers') }}
 
 ),
 
-RENAMED AS (
+renamed as (
 
-    SELECT
+    select
 
         ----------  ids
-        ID AS CUSTOMER_ID,
-        NAME AS CUSTOMER_NAME
+        id as customer_id,
+        name as customer_name
 
-    FROM SOURCE
+    from source
 
 )
 
-SELECT * FROM RENAMED
+select * from renamed
