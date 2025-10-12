@@ -1,0 +1,11 @@
+semantic_models:
+  - name: time_spine
+    model: ref('time_spine')
+    description: "Time spine para MetricFlow / camada semântica"
+    defaults:
+      agg_time_dimension: date_day
+    dimensions:
+      - name: date_day
+        type: time
+        type_params:
+          time_granularity: day
