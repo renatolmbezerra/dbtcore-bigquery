@@ -36,3 +36,12 @@ models:
     staging:
       +schema: staging # Define o schema padrão para os modelos de staging
       +materialized: view
+    semantic:
+      +schema: semantic # Define o schema padrão para os modelos semânticos
+      +materialized: table
+    mart:
+      +schema: mart # Define o schema padrão para os modelos de mart
+      +materialized: table
+
+semantic-models:
+  +enabled: true
